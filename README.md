@@ -1,7 +1,7 @@
 # fingersensorpaper
 Code and datasets from HAND finger sensor testing for purpose of data availability
 
-Software used: MATLAB 2021a (w/ Statistics and Machine Learning Toolbox), and Solidworks 2020.
+Software used: MATLAB 2021a with Statistics and Machine Learning Toolbox (MathWorks; Natick, MA), and Solidworks 2020 (Dassault Systèmes; Vélizy-Villacoublay, France).
 
 To replicate calibration data and figures:
 1. Uncomment line 11 and comment line 12 of hdf5_read_sensors.m so active code is "filename = '06172019_s56_c.hdf5';".

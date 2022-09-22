@@ -218,7 +218,7 @@ else
     load cal_mat_56_final.mat
 end
 W_adj = C*A';
-e = Wr' - W_adj;
+e = W_adj - Wr';
 
 wgt_list = unique(W);
 m = length(wgt_list);
@@ -636,7 +636,7 @@ if (isValidate)
     xticks([0 90 180 270 360])
     ylim([0 360])
     yticks([0 90 180 270 360])
-    caxis([-120 100])
+    caxis([-100 100])
     hold off
     for i=1:3
         subplot(2,2,1+i)
@@ -649,7 +649,7 @@ if (isValidate)
         xticks([0 90 180 270 360])
         ylim([0 360])
         yticks([0 90 180 270 360])
-        caxis([-120 100])
+        caxis([-150 150])
         title(dim_str2(i))
         xlabel('Angle 1 (degrees)')
         ylabel('Angle 2 (degrees)')
